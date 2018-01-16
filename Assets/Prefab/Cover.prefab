@@ -100,8 +100,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4771922686810080}
   - component: {fileID: 33840199464996012}
-  - component: {fileID: 65326085940935602}
   - component: {fileID: 23512867717471656}
+  - component: {fileID: 64732999906445648}
   m_Layer: 0
   m_Name: Cover
   m_TagString: Untagged
@@ -142,7 +142,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1516781463496588}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.3798648, y: 0, z: 0.1758256}
+  m_LocalPosition: {x: 0.34901822, y: 0, z: 0.099784136}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4452320583985610}
@@ -233,8 +233,8 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1848904484095314}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &65326085940935602
-BoxCollider:
+--- !u!64 &64732999906445648
+MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -242,9 +242,11 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &114012531916021870
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -258,8 +260,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _curve: {fileID: 114771404690863924}
   handleStyle: 0
-  _handle1: {x: -0.06226635, y: 0, z: 0.39229643}
-  _handle2: {x: 0.06226635, y: -0, z: -0.39229643}
+  _handle1: {x: -0.011444092, y: 0, z: -0.41042602}
+  _handle2: {x: 0.011444092, y: -0, z: 0.41042602}
 --- !u!114 &114375857520716104
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -278,13 +280,13 @@ MonoBehaviour:
     width: 0.2
   m_Looped: 0
   m_Waypoints:
-  - position: {x: 2.5, y: -0.14488053, z: 2.5}
-    roll: 0
-  - position: {x: 3, y: -0.15267897, z: 0.69}
+  - position: {x: 2.5, y: -0.15267897, z: -2.5}
     roll: 0
   - position: {x: 3, y: -0.15267897, z: -1.36}
     roll: 0
-  - position: {x: 2.5, y: -0.15267897, z: -2.5}
+  - position: {x: 3, y: -0.15267897, z: 0.69}
+    roll: 0
+  - position: {x: 2.5, y: -0.14488053, z: 2.5}
     roll: 0
 --- !u!114 &114410631601448600
 MonoBehaviour:
@@ -316,9 +318,9 @@ MonoBehaviour:
   drawColor: {r: 1, g: 0, b: 0, a: 1}
   _close: 0
   points:
-  - {fileID: 114874566745043484}
-  - {fileID: 114012531916021870}
   - {fileID: 114410631601448600}
+  - {fileID: 114012531916021870}
+  - {fileID: 114874566745043484}
 --- !u!114 &114874566745043484
 MonoBehaviour:
   m_ObjectHideFlags: 1
